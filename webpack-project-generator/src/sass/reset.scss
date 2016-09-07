@@ -1,0 +1,59 @@
+$fontSize: 12px;
+$fontFamily: "Hiragino Sans GB","微软雅黑","Microsoft YaHei",SimHei,Tahoma,"宋体",SimSun,sansserif;
+$lineHeight: 190%;
+$fontColor: #333;
+$iconImgUrl: 'http://img.58cdn.com.cn/ui7/post/pc/imgs/icons.png';
+/* base.css */
+body {
+	font-size: $fontSize;
+}
+html, body {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font: normal #{$fontSize}/#{$lineHeight} #{$fontFamily};
+	color: $fontColor;
+	text-align: center;
+	background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+	font: normal #{$fontSize}/#{$lineHeight} #{$fontFamily};
+}
+h1, h2, h3 {
+	font-family: $fontFamily;
+}
+div {
+	margin: 0 auto;
+	text-align: left;
+	font: normal #{$fontSize}/#{$lineHeight} #{$fontFamily};
+}
+li, p {
+	text-align: left;
+	font: normal #{$fontSize}/#{$lineHeight} #{$fontFamily};
+}
+a:link, a:visited {
+	color: $fontColor;
+	text-decoration: none;
+}
+a:hover {
+	color: $fontColor;
+	text-decoration: underline;
+}
+img {
+	border: none;
+}
+ol, ul, li {
+	list-style: none;
+}
+em, i {
+	font-style: normal;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #fff !important;
+  background-image: none;
+  color: rgb(0, 0, 0);
+}

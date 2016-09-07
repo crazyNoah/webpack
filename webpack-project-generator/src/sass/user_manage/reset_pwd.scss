@@ -1,0 +1,30 @@
+.reset_pwd_wrap {
+  .form_row label:first-child {
+    width: 95px;
+  }
+  input[type="password"] {
+    width: 240px;
+  }
+  .error_tips {
+    display:none;
+    color: #e25757;
+    padding-left: 10px;
+    &:before {
+      content: '*';
+      margin-right: 5px;
+    }
+  }
+  .btns {
+    text-align: center;
+    font-size: 0;
+    margin-top: 100px;
+    .btn {
+      margin: 0 15px;
+    }
+  }
+  input {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+@import './reset.scss';
+@import './sprite.scss';
+@import './login.scss';
+@import './layout.scss';
+@import './material/material_detail.scss';
+@import './notice/notice_detail.scss';
+@import './user_manage/reset_pwd.scss';
+
+
+@import '../components/header/header.scss';
+@import '../components/menubar/menubar.scss';
+@import '../components/table/table.scss';
+@import '../components/dialog/dialog.scss';
+
+// 特殊处理的单独的放在每个页面里
+#schoolName {
+  width: 290px;
+}
+#schoolNature {
+  width: 105px;
+}
+
+#mobile {
+  width: 134px;
+}
+#leaderName {
+  width: 124px;
+}
+#endDate,
+#startDate {
+  text-align: center;
+}
+#filterBtn {
+  float: right;
+}
+
+.park_info_wrap {
+
+}

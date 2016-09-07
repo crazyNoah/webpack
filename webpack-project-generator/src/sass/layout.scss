@@ -1,0 +1,215 @@
+
+// @TODO 提取到base中
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  overflow: hidden;
+  top: 61px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.left_container {
+  width: 190px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 5px solid #f5f5f5;
+}
+.right_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 196px;
+  right: 0;
+  overflow: auto;
+  padding: 10px 22px 0;
+  box-sizing: border-box;
+  /* 右侧内容导航栏 */
+  h2 {
+    width: 960px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin: 22px 0;
+    color: #485b7f;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    border-left: 4px solid #485b7f;
+    font-weight: normal;
+  }
+}
+.filter_options_row,
+.form_row {
+  width: 960px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  color: #000;
+  label:first-child {
+    display: inline-block;
+    float: left;
+    width: 75px;
+    text-align: right;
+  }
+  input[type="text"],
+  select {
+    height: 28px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  select {
+    width: 156px;
+  }
+}
+.filter_options_row {
+  input,
+  select {
+    margin-left: 5px;
+  }
+}
+.filter_btns_row {
+  width: 960px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.form_row {
+  height: auto;
+  line-height: 30px;
+  padding: 10px 0;
+  &>label:first-child {
+    width: 55px;
+    vertical-align: top;
+  }
+}
+// 按钮样式
+.btn {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  background-color: #4fc4f6;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  &:link,
+  &:visited,
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  &.btn-large {
+    width: 130px;
+  }
+  // 白色背景，蓝边
+  &.btn-white-bg {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #00a3e4;
+    color: #00a3e4;
+  }
+  &.btn-small {
+    width: 58px;
+  }
+  &.btn-oringe {
+    background-color: #ff9d1f;
+  }
+  &.btn-red {
+    background-color: #f76447;
+  }
+  &.btn-disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+  }
+}
+
+a.link_blue {
+  color: #00a3e4;
+}
+.fr {
+  float: right;
+}
+/**
+ * 附件相关的样式
+ */
+.accessory_wrap {
+  display: inline-block;
+}
+.accessory_row {
+  height: 38px;
+  font-size: 0;
+  line-height: 38px;
+  color: #000;
+  position: relative;
+  i {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  span{
+    font-size: 12px;
+    &:first-of-type {
+      cursor: pointer;
+      padding-left: 40px;
+      margin-left: 0;
+    }
+  }
+}
+.file_excel {
+  @include sprite($i-accessory-excel);
+}
+.file_doc {
+  @include sprite($i-accessory-doc);
+}
+.file_pdf {
+  @include sprite($i-accessory-pdf);
+}
+.file_jpeg {
+  @include sprite($i-accessory-jpeg);
+}
+.file_ppt {
+  @include sprite($i-accessory-ppt);
+}
+.file_mp4 {
+  @include sprite($i-accessory-mp4);
+}
+.file_txt {
+  @include sprite($i-accessory-txt);
+}
+.file_other {
+  @include sprite($i-accessory-other);
+}
+// 详情页通用样式
+.detail_wrap {
+  input[type="text"],
+  textarea {
+    width: 900px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    color: #000;
+    border-color: #ccc;
+  }
+  textarea {
+    padding: 3px 8px;
+  }
+  .btn_wrap {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 0;
+    .btn {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}

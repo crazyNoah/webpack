@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>政务管理-材料列表</title>
+</head>
+<body>
+  <div class="header">
+    <% include ../../components/header/header.ejs %>
+  </div>
+  <div class="container">
+    <!-- menubar -->
+    <div class="left_container" id="headerContainer" active-menu="menu_material">
+      <% include ../../components/menubar/menubar.ejs %>
+    </div>
+    <!-- menubar end -->
+    <!-- content -->
+    <div class="right_container material_wrap">
+      <h2>材料上报</h2>
+      <div class="filter_options_row">
+        <label for="">地区:</label>
+        <select name="provinceCode" id="provinceSelect">
+          <option value=""  selected="selected">全省</option>
+        </select>
+        <select name="cityCode" id="citySelect">
+          <option value=""  selected="selected">全市</option>
+        </select>
+        <select name="areaCode" id="areaSelect">
+          <option value=""  selected="selected">全区</option>
+        </select>
+        <span style="float:right;">
+          <label for="title">标题:</label>
+          <input name="title" type="text" id="title" />
+        </span>
+      </div>
+      <div class="filter_options_row">
+        <label for="">上报时间:</label>
+        <input name="startDate" type="text" id="startDate" placeholder="请选择开始时间" />-<input name="endDate" type="text" id="endDate" placeholder="请选择结束时间" />
+        <label for="schoolName">幼儿园名称:</label>
+        <input name="schoolName" type="text" id="schoolName" />
+        <label for="createUser">发布人:</label>
+        <input name="createUser" type="text" id="createUser">
+        <a href="javascript:void(0);" id="filterBtn" class="btn">查询</a>
+      </div>
+      <div class="content_wrap" id="content">
+
+      </div>
+    </div>
+    <!-- content end -->
+  </div>
+</body>
+</html>

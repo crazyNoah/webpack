@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>政务管理-重置密码</title>
+</head>
+<body>
+  <div class="header">
+    <% include ../../components/header/header.ejs %>
+  </div>
+  <div class="container">
+    <!-- menubar -->
+    <div class="left_container" id="headerContainer" active-menu="menu_user_manage">
+      <% include ../../components/menubar/menubar.ejs %>
+    </div>
+    <!-- menubar end -->
+    <!-- content -->
+    <div class="right_container">
+      <h2>修改密码</h2>
+      <div class="content_wrap reset_pwd_wrap" id="content">
+        <div class="form_row">
+          <label for="oldPassword">旧密码:</label>
+          <input type="password" id="oldPassword"/>
+          <span class="error_tips"></span>
+        </div>
+        <div class="form_row">
+          <label for="newPassword">新密码:</label>
+          <input type="password" id="newPassword" />
+          <span class="error_tips"></span>
+        </div>
+        <div class="form_row">
+          <label for="confirmPassword">再次输入新密码:</label>
+          <input type="password" id="confirmPassword" />
+          <span class="error_tips"></span>
+        </div>
+        <div class="btns">
+          <span class="btn" id="submitBtn">确定</span>
+          <span onclick="history.go(-1);" class="btn btn-white-bg">取消</span>
+        </div>
+      </div>
+    </div>
+    <!-- content end -->
+  </div>
+</body>
+</html>

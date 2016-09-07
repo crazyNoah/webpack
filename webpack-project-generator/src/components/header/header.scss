@@ -1,0 +1,59 @@
+
+.header {
+  background-color: #485b7f;
+  height: 61px;
+  line-height: 61px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  h1 {
+    margin-left: 25px;
+    line-height: 61px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .user_info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    line-height: 61px;
+    font-size: 0;
+    a {
+      display: inline-block;
+      padding: 0 35px;
+      background-color: #3c4c6c;
+      color: #6d81a8;
+      font-size: 14px;
+      text-decoration: none;
+      position: relative;
+      &:last-child:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 23px;
+        bottom: 23px;
+        width: 2px;
+        background-color: #6d81a8;
+        display: block;
+      }
+    }
+  }
+  .user_info_avator {
+    background:  url('../imgs/logo-icon.png')  center no-repeat;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    left: -35px;
+    top: 15px;
+  }
+  .user_info_name {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    font-weight: border;
+    margin-right: 25px;
+  }
+}

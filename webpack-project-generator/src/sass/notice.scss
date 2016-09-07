@@ -1,0 +1,16 @@
+@import './reset.scss';
+@import './sprite.scss';
+@import './login.scss';
+@import './layout.scss';
+
+
+@import '../components/header/header.scss';
+@import '../components/menubar/menubar.scss';
+@import '../components/table/table.scss';
+
+// 特殊处理的单独的放在每个页面里
+.table_cell {
+  .btn:last-child {
+    margin-left: 13px;
+  }
+}

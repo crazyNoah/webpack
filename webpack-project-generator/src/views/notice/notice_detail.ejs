@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>政务管理-通知详情</title>
+</head>
+<body>
+  <div class="header">
+    <% include ../../components/header/header.ejs %>
+  </div>
+  <div class="container">
+    <!-- menubar -->
+    <div class="left_container" id="headerContainer" active-menu="menu_notice">
+      <% include ../../components/menubar/menubar.ejs %>
+    </div>
+    <!-- menubar end -->
+    <!-- content -->
+    <div class="right_container">
+      <h2>通知公告 / 详情</h2>
+      <div class="content_wrap notice_detail_wrap detail_wrap">
+        <div class="form_row">
+          <label for="">标题:</label>
+          <input type="text" id="title" disabled />
+        </div>
+        <div class="form_row">
+          <label for="">内容:</label>
+          <textarea name="" id="content" cols="30" rows="10" disabled></textarea>
+        </div>
+        <div class="form_row">
+          <label for="">附件:</label>
+          <div class="accessory_wrap">
+
+          </div>
+        </div>
+        <div class="form_row">
+          <label for="">发布范围:</label>
+          <div class="range_wrap"></div>
+        </div>
+        <div class="btn_wrap">
+          <span class="btn btn-red" id="deleteNoticeBtn">删除</span>
+          <span onClick="history.go(-1)" class="btn btn-white-bg">返回</span>
+        </div>
+      </div>
+    </div>
+    <!-- content end -->
+  </div>
+</body>
+</html>

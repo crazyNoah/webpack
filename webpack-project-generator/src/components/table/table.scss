@@ -1,0 +1,75 @@
+@import '../../sass/sprite.scss';
+.table_row {
+  display: table-row;
+}
+.table_cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: inherit;
+  border-right: 1px solid #deecf4;
+  &:last-child {
+    border: 0;
+  }
+}
+.table_wrap {
+  display: table;
+  width: 100%;
+  border: 1px solid  #deecf4;
+  margin-bottom: 20px;
+}
+.table_body {
+  display: table-row-group;
+  .table_row{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    &:nth-child(2n) {
+      background-color: #fafafa;
+    }
+  }
+}
+.table_head {
+  display: table-header-group;
+  .table_row {
+    text-align: center;
+    height: 44px;
+    background-color: #f1f6f9;
+    border-bottom: 1px solid #deecf4;
+  }
+}
+
+
+.pagination_wrap {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  span {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    margin: 0 10px;
+    &.direct_page {
+      width: 40px;
+    }
+    &:hover {
+      background-color: #eee;
+    }
+    &.cur {
+      background-color: #00a3e4;
+      color: #fff;
+    }
+  }
+  .prev_btn {
+    @include sprite($i-page-prev-btn);
+    text-indent: -9999em;
+  }
+  .next_btn {
+    @include sprite($i-page-next-btn);
+    text-indent: -9999em;
+  }
+}

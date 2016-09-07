@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>政务管理-发布通知</title>
+</head>
+<body>
+  <div class="header">
+    <% include ../../components/header/header.ejs %>
+  </div>
+  <div class="container">
+    <!-- menubar -->
+    <div class="left_container" id="headerContainer" active-menu="menu_notice">
+      <% include ../../components/menubar/menubar.ejs %>
+    </div>
+    <!-- menubar end -->
+    <!-- content -->
+    <div class="right_container create_notice_wrap detail_wrap">
+      <h2>通知公告 / 发布通知</h2>
+      <div class="form_row">
+          <label for="title">标题:&nbsp;</label>
+          <input type="text" id="title" placeholder="200字以内（必填）"/>
+      </div>
+      <div class="form_row">
+        <label for="context">内容:&nbsp;</label>
+        <textarea name="context" id="context" rows="10" placeholder="1500字以内（选填）"></textarea>
+      </div>
+      <div class="form_row">
+        <label>附件:&nbsp;</label>
+        <div class="accessory_wrap">
+          <div id="accessoryList"></div>
+          <span class="btn btn-white-bg" id="uploadFile">上传附件</span><span class="tips">支持ppt、word、excel、pdf、视频、图片等</span>
+        </div>
+      </div>
+      <div class="form_row">
+        <label>发布范围:&nbsp;</label>
+        <div class="radio_wrap">
+          <input type="radio" name="range" id="all" value="全部" checked />
+          <label for="all">全部</label>
+        </div>
+        <div class="radio_wrap">
+          <input type="radio" name="range" id="president" value="仅园长" />
+          <label for="president">仅园长</label>
+        </div>
+        <div class="radio_wrap">
+          <input type="radio" name="range" id="teacher" value="仅教师" />
+          <label for="teacher">仅教师</label>
+        </div>
+      </div>
+      <div class="btns">
+        <span class="btn btn-small" id="submitBtn">发布</span>
+        <span onclick="history.go(-1);" class="btn btn-small btn-white-bg" id="cancelBtn">取消</span>
+      </div>
+    </div>
+    <!-- content end -->
+  </div>
+</body>
+</html>

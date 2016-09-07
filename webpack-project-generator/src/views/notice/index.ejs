@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>政务管理-通知列表</title>
+</head>
+<body>
+  <div class="header">
+    <% include ../../components/header/header.ejs %>
+  </div>
+  <div class="container">
+    <!-- menubar -->
+    <div class="left_container" id="headerContainer" active-menu="menu_notice">
+      <% include ../../components/menubar/menubar.ejs %>
+    </div>
+    <!-- menubar end -->
+    <!-- content -->
+    <div class="right_container notice_index_wrap">
+      <h2>通知公告<a href="create_notice.html" class="btn fr btn-white-bg btn-large">发布通知</a></h2>
+      <div class="filter_options_row">
+        <label for="">发布时间:</label>
+        <input type="text" id="createTime" placeholder="请选择开始时间" />-<input type="text" id="endTime" placeholder="请选择结束时间" />
+        <label for="">标题:</label>
+        <input type="text" id="title" />
+        <label for="">发布人:</label>
+        <input type="text" id="userName" />
+      </div>
+      <div class="filter_btns_row">
+        <a href="javascript:void(0);" id="filterBtn" class="btn btn-large">查询</a>
+      </div>
+      <div class="content_wrap" id="content">
+
+      </div>
+    </div>
+    <!-- content end -->
+  </div>
+</body>
+</html>
